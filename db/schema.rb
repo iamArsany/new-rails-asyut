@@ -20,7 +20,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_14_110504) do
 
   create_table "users", force: :cascade do |t|
     t.date "DOB"
-    t.string "address"
+    t.string "address", null: false
     t.datetime "created_at", null: false
     t.string "email"
     t.string "name"
